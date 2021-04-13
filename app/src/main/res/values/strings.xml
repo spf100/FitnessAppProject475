@@ -59,4 +59,5 @@
     <string name="burned">Calories Burned:</string>
     <string name="calsburnedtd">Burned Goal:</string>
     <string name="submitfood">Submit Food</string>
+    <string name="pedometer">Pedometer</string>
 </resources>
