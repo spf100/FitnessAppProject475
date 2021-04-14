@@ -37,5 +37,6 @@
     <string name="submitfood">Submit Food</string>
     <string name="pedometer">Pedometer</string>
     <string name="exercise">Exercise</string>
+    <string name="profile">Profile</string>
     <string name="string_0">0</string>
 </resources>

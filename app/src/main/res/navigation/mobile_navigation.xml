@@ -25,6 +25,11 @@
     <fragment
         android:id="@+id/nav_pedometer"
         android:name="com.example.fitnessappproject475.ui.Pedometer.PedometerFragment"
-        android:label="Pedometer"
+        android:label="@string/pedometer"
         tools:layout="@layout/pedometer_fragment" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.fitnessappproject475.ui.Profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/profile_fragment" />
 </navigation>
