@@ -7,21 +7,23 @@
         <item
             android:id="@+id/nav_profile"
             android:title="@string/profile"
+            android:icon="@drawable/baseline_account_box_18"
             />
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/baseline_other_houses_20"
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_exercise"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/outline_run_circle_20"
             android:title="@string/exercise" />
         <item
             android:id="@+id/nav_nutrition"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/outline_local_dining_24"
             android:title="@string/nutrition" />
         <item
             android:id="@+id/nav_pedometer"
+            android:icon="@drawable/baseline_data_saver_off_20"
             android:title="@string/pedometer"
             />
     </group>
