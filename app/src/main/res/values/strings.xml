@@ -41,4 +41,19 @@
     <string name="string_0">0</string>
     <string name="username">Name</string>
     <string name="weight">Weight:</string>
+    <string name="update_goals">Update Goals</string>
+    <string name="calcount">TextView</string>
+    <string name="goals">Goals</string>
+    <string name="daily_calorie_intake">Daily Calorie Intake</string>
+    <string name="current_weight">Current Weight:</string>
+    <string name="starting_weight">Starting Weight:</string>
+    <string name="height">Height:</string>
+    <string name="heightoutput">TextView</string>
+    <string name="startweightoutput">TextView</string>
+    <string name="currentweightoutput">TextView</string>
+    <string name="dailycaloriteburnedoutput">TextView</string>
+    <string name="daily_calories_burned">Daily Calories Burned:</string>
+    <string name="weight_goal">Weight Goal:</string>
+    <string name="weightgoaloutput">TextView</string>
+    <string name="todooutput">TODO</string>
 </resources>

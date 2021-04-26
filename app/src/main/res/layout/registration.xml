@@ -53,7 +53,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.074"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="73dp" />
+        tools:layout_editor_absoluteY="73dp"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -80,7 +81,8 @@
         android:gravity="start|top"
         android:inputType="textMultiLine"
         app:layout_constraintBaseline_toBaselineOf="@+id/height"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/weight"

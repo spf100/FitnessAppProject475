@@ -10,27 +10,34 @@
         android:id="@+id/heightValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/heightoutput"
         app:layout_constraintBaseline_toBaselineOf="@+id/heightLabel"
-        tools:layout_editor_absoluteX="108dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toEndOf="@+id/heightLabel" />
 
     <TextView
         android:id="@+id/startedweightLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:text="Starting Weight:"
-        app:layout_constraintTop_toBottomOf="@+id/heightLabel"
-        tools:layout_editor_absoluteX="48dp" />
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/starting_weight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightLabel" />
 
     <TextView
         android:id="@+id/weightGoalLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="9dp"
-        android:text="Weight Goal:"
+        android:text="@string/weight_goal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calorieburnedLabel"
-        tools:layout_editor_absoluteX="51dp" />
+        app:layout_constraintVertical_bias="0.009" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -42,75 +49,88 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.026"
-        tools:src="@tools:sample/avatars" />
+        tools:src="@tools:sample/avatars"
+        android:contentDescription="@string/todooutput" />
 
     <TextView
         android:id="@+id/weightgoalValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBaseline_toBaselineOf="@+id/weightGoalLabel"
-        tools:layout_editor_absoluteX="223dp" />
+        android:text="@string/weightgoaloutput"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toEndOf="@+id/weightGoalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/calorieburnedValue"
+        app:layout_constraintVertical_bias="0.055" />
 
     <TextView
         android:id="@+id/heightLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:text="Height:"
-        app:layout_constraintTop_toBottomOf="@+id/updateStats"
-        tools:layout_editor_absoluteX="48dp" />
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateStats" />
 
     <TextView
         android:id="@+id/calorieburnedLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:text="Daily Calories Burned:"
-        app:layout_constraintTop_toBottomOf="@+id/calorieIntakeLabel"
-        tools:layout_editor_absoluteX="50dp" />
+        android:layout_marginTop="8dp"
+        android:text="@string/daily_calories_burned"
+        app:layout_constraintEnd_toStartOf="@+id/calorieburnedValue"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calorieIntakeLabel" />
 
     <Button
         android:id="@+id/updateGoals"
         android:layout_width="118dp"
         android:layout_height="58dp"
-        android:text="Update Goals"
+        android:text="@string/update_goals"
         app:layout_constraintBaseline_toBaselineOf="@+id/updateStats"
-        tools:layout_editor_absoluteX="239dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/updateStats" />
 
     <TextView
         android:id="@+id/currentweightValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/currentweightoutput"
         app:layout_constraintBaseline_toBaselineOf="@+id/currentweightLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toEndOf="@+id/currentweightLabel" />
 
     <TextView
         android:id="@+id/calorieintakeValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginEnd="112dp"
+        android:text="@string/calcount"
         app:layout_constraintBaseline_toBaselineOf="@+id/calorieIntakeLabel"
-        tools:layout_editor_absoluteX="223dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/currentweightLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
-        android:text="Current Weight:"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/current_weight"
+        app:layout_constraintBottom_toTopOf="@+id/goalsLabel"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/startedweightLabel"
-        tools:layout_editor_absoluteX="47dp" />
+        app:layout_constraintVertical_bias="0.064" />
 
     <TextView
         android:id="@+id/goalsLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:text="Goals"
+        android:layout_marginTop="28dp"
+        android:text="@string/goals"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -120,33 +140,39 @@
         android:id="@+id/calorieIntakeLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:text="Daily Calorie Intake"
-        app:layout_constraintTop_toBottomOf="@+id/goalsLabel"
-        tools:layout_editor_absoluteX="50dp" />
+        android:layout_marginTop="28dp"
+        android:text="@string/daily_calorie_intake"
+        app:layout_constraintEnd_toStartOf="@+id/calorieintakeValue"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goalsLabel" />
 
     <Button
         android:id="@+id/updateStats"
         android:layout_width="119dp"
         android:layout_height="58dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
         android:text="Update Statistics"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:layout_editor_absoluteX="47dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/startedweightValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/startweightoutput"
         app:layout_constraintBaseline_toBaselineOf="@+id/startedweightLabel"
-        tools:layout_editor_absoluteX="166dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toEndOf="@+id/startedweightLabel" />
 
     <TextView
         android:id="@+id/calorieburnedValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginEnd="112dp"
+        android:text="@string/dailycaloriteburnedoutput"
         app:layout_constraintBaseline_toBaselineOf="@+id/calorieburnedLabel"
-        tools:layout_editor_absoluteX="224dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
