@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessAppProject475">
+        <activity android:name=".RegistrationActivity"></activity>
         <activity
             android:name=".MainMenu"
             android:label="@string/title_activity_main_menu"
-            android:theme="@style/Theme.FitnessAppProject475.NoActionBar"></activity>
+            android:theme="@style/Theme.FitnessAppProject475.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
