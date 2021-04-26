@@ -39,4 +39,6 @@
     <string name="exercise">Exercise</string>
     <string name="profile">Profile</string>
     <string name="string_0">0</string>
+    <string name="username">Name</string>
+    <string name="weight">Weight:</string>
 </resources>
