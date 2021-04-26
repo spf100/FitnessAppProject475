@@ -56,4 +56,8 @@
     <string name="weight_goal">Weight Goal:</string>
     <string name="weightgoaloutput">TextView</string>
     <string name="todooutput">TODO</string>
+    <string name="height">Height:</string>
+    <string name="goalsregistration">TextView</string>
+    <string name="goalsregistrations">Goals</string>
+    <string name="registration">Email</string>
 </resources>
