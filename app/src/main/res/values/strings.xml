@@ -47,7 +47,7 @@
     <string name="daily_calorie_intake">Daily Calorie Intake</string>
     <string name="current_weight">Current Weight:</string>
     <string name="starting_weight">Starting Weight:</string>
-    <string name="height">Height:</string>
+    <string name="height1">Height:</string>
     <string name="heightoutput">TextView</string>
     <string name="startweightoutput">TextView</string>
     <string name="currentweightoutput">TextView</string>
