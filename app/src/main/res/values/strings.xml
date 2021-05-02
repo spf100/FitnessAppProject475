@@ -63,4 +63,10 @@
     <string name="todays_stats">Todays Stats</string>
     <string name="calorie_intake">Calorie Intake</string>
     <string name="burned_calories">Burned Calories</string>
+    <string name="update_statistics">Update Statistics</string>
+    <string name="usernamefromgoogle">TextView</string>
+    <string name="pic">TextView</string>
+    <string name="idfromgoogle">TextView</string>
+    <string name="emailfromg">TextView</string>
+    <string name="namefromgoogle">TextView</string>
 </resources>
