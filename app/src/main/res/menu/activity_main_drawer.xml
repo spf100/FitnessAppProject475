@@ -6,8 +6,8 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_profile"
-            android:title="@string/profile"
-            android:icon="@drawable/baseline_account_box_18"
+            android:title="@string/settings"
+            android:icon="@drawable/outline_settings_24"
             />
         <item
             android:id="@+id/nav_home"

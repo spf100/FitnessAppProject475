@@ -3,6 +3,7 @@ package com.example.fitnessappproject475;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -31,7 +32,7 @@ public class login extends AppCompatActivity {
         namefromgoogle = findViewById(R.id.namefromgoogle);
         emailfromg = findViewById(R.id.email);
      //   idfromgoogle = findViewById(R.id.id);
-        pic = findViewById(R.id.pic);
+       // pic = findViewById(R.id.pic);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
@@ -54,7 +55,10 @@ public class login extends AppCompatActivity {
             Glide.with(this).load(String.valueOf(personPhoto)).into(pic);
         }
 
+        //TODO: add onCLick for the nav or the next page
+
     }
+
 
 
     private void signOut() {

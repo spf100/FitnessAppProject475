@@ -70,4 +70,5 @@
     <string name="emailfromg">TextView</string>
     <string name="namefromgoogle">TextView</string>
     <string name="sign_out">Sign Out</string>
+    <string name="settings">Settings</string>
 </resources>
