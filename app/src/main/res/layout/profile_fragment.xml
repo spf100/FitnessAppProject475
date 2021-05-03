@@ -211,10 +211,10 @@
 
 
     <TextView
-        android:id="@+id/namefromgoogle"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/namefromgoogle"
+        android:text="@string/name"
         app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -227,7 +227,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="9dp"
-        android:text="@string/emailfromg"
+        android:text="@string/email"
         app:layout_constraintBottom_toTopOf="@+id/updateStats"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -241,7 +241,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
         android:layout_weight="1"
-        android:text="@string/sign_out"
+        android:text="Sign Out"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
