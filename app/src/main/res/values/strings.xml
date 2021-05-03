@@ -60,15 +60,15 @@
     <string name="goalsregistration">TextView</string>
     <string name="goalsregistrations">Goals</string>
     <string name="registration">Email</string>
-    <string name="todays_stats">Todays Stats</string>
+    <string name="todays_stats">Today\'s Stats</string>
     <string name="calorie_intake">Calorie Intake</string>
     <string name="burned_calories">Burned Calories</string>
     <string name="update_statistics">Update Statistics</string>
     <string name="usernamefromgoogle">TextView</string>
     <string name="pic">TextView</string>
     <string name="idfromgoogle">TextView</string>
-    <string name="emailfromg">TextView</string>
-    <string name="namefromgoogle">TextView</string>
+    <string name="emailfromg">jdoe465@gmail.com</string>
+    <string name="namefromgoogle">John Doe</string>
     <string name="sign_out">Sign Out</string>
     <string name="settings">Settings</string>
 </resources>
