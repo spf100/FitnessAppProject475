@@ -24,7 +24,8 @@
         android:layout_marginTop="16dp"
         android:text="@string/starting_weight"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/heightLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/heightLabel"
+        android:layout_marginLeft="68dp" />
 
     <TextView
         android:id="@+id/weightGoalLabel"
@@ -72,7 +73,8 @@
         android:layout_marginTop="28dp"
         android:text="@string/height"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updateStats" />
+        app:layout_constraintTop_toBottomOf="@+id/updateStats"
+        android:layout_marginLeft="96dp" />
 
     <TextView
         android:id="@+id/calorieburnedLabel"
@@ -111,7 +113,8 @@
         android:layout_marginEnd="112dp"
         android:text="@string/calcount"
         app:layout_constraintBaseline_toBaselineOf="@+id/calorieIntakeLabel"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="112dp" />
 
     <TextView
         android:id="@+id/currentweightLabel"
@@ -123,7 +126,8 @@
         app:layout_constraintBottom_toTopOf="@+id/goalsLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/startedweightLabel"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintVertical_bias="0.064"
+        android:layout_marginLeft="68dp" />
 
     <TextView
         android:id="@+id/goalsLabel"
@@ -155,7 +159,8 @@
         android:layout_marginTop="68dp"
         android:text="@string/update_statistics"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:layout_marginLeft="48dp" />
 
     <TextView
         android:id="@+id/startedweightValue"
@@ -174,7 +179,8 @@
         android:layout_marginEnd="112dp"
         android:text="@string/dailycaloriteburnedoutput"
         app:layout_constraintBaseline_toBaselineOf="@+id/calorieburnedLabel"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="112dp" />
 
 <!--    <TextView-->
 <!--        android:id="@+id/textView2"-->
@@ -189,10 +195,10 @@
 
 
     <TextView
-        android:id="@+id/namefromgoogle"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/namefromgoogle"
+        android:text="@string/name"
         app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -205,7 +211,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="9dp"
-        android:text="@string/emailfromg"
+        android:text="@string/email"
         app:layout_constraintBottom_toTopOf="@+id/updateStats"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -219,7 +225,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
         android:layout_weight="1"
-        android:text="@string/sign_out"
+        android:text="Sign Out"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

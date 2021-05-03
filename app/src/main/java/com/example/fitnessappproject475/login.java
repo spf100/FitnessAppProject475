@@ -22,21 +22,21 @@ import com.google.android.gms.tasks.Task;
 public class login extends AppCompatActivity {
     Button signout;
     GoogleSignInClient mGoogleSignInClient;
-    TextView namefromgoogle, emailfromg;
+    TextView name, email;
     ImageView pic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile_fragment);
-        namefromgoogle = findViewById(R.id.namefromgoogle);
-        emailfromg = findViewById(R.id.email);
-     //   idfromgoogle = findViewById(R.id.id);
-        pic = findViewById(R.id.pic);
+        name = findViewById(R.id.name);
+        email = findViewById(R.id.email);
+
+
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-           //     (this, gso);
+
         Button signout = findViewById(R.id.signout);
         signout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,9 +49,9 @@ public class login extends AppCompatActivity {
             String personName = acct.getDisplayName();
             String personEmail = acct.getEmail();
             Uri personPhoto = acct.getPhotoUrl();
-            namefromgoogle.setText(personName);
-            emailfromg.setText(personEmail);
-            Glide.with(this).load(String.valueOf(personPhoto)).into(pic);
+            name.setText(personName);
+            email.setText(personEmail);
+           Glide.with(this).load(String.valueOf(personPhoto)).into(pic);
         }
 
     }
@@ -62,7 +62,7 @@ public class login extends AppCompatActivity {
                 .addOnCompleteListener(this, new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        Toast.makeText(login.this, "signout", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(login.this, "Signed out successfully! ", Toast.LENGTH_SHORT).show();
                         finish();
                     }
                 });
