@@ -14,10 +14,6 @@
             android:icon="@drawable/baseline_other_houses_20"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_exercise"
-            android:icon="@drawable/outline_run_circle_20"
-            android:title="@string/exercise" />
-        <item
             android:id="@+id/nav_nutrition"
             android:icon="@drawable/outline_local_dining_24"
             android:title="@string/nutrition" />

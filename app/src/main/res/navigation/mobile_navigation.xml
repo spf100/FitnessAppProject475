@@ -19,15 +19,6 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
-        android:id="@+id/nav_exercise"
-        android:name="com.example.fitnessappproject475.ui.Exercise.ExerciseFragment"
-        android:label="@string/exercise"
-        tools:layout="@layout/fragment_exercise" >
-        <action
-            android:id="@+id/action_nav_exercise_to_nav_nutrition"
-            app:destination="@id/nav_nutrition" />
-    </fragment>
 
     <fragment
         android:id="@+id/nav_nutrition"
@@ -52,8 +43,5 @@
         android:name="com.example.fitnessappproject475.login"
         android:label="Settings"
         tools:layout="@layout/profile_fragment" >
-        <action
-            android:id="@+id/action_nav_profile_to_nav_exercise"
-            app:destination="@id/nav_exercise" />
     </fragment>
 </navigation>
