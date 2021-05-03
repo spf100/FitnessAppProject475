@@ -10,41 +10,59 @@
 
     <TextView
         android:id="@+id/namefromgoogle"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/namefromgoogle" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/namefromgoogle"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
 
     <TextView
-        android:id = "@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/emailfromg"/>
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emailfromg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="119dp" />
 
     <TextView
-        android:id = "@+id/id"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/idfromgoogle"/>
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="156dp"
+        android:text="@string/idfromgoogle"
+        app:layout_constraintBottom_toTopOf="@+id/signout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <ImageView
         android:id="@+id/pic"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/pic"
         tools:layout_editor_absoluteX="-46dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
 
     <Button
         android:id="@+id/signout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="308dp"
         android:layout_weight="1"
-        android:text="Sign Out"
-        app:layout_constraintBottom_toBottomOf="@+id/namefromgoogle"
+        android:text="@string/sign_out"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/namefromgoogle" />
-
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,12 +22,12 @@ import com.google.android.gms.tasks.Task;
 public class login extends AppCompatActivity {
     Button signout;
     GoogleSignInClient mGoogleSignInClient;
-    TextView namefromgoogle, emailfromg,idfromgoogle;
+    TextView namefromgoogle, emailfromg;
     ImageView pic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.profile_fragment);
         namefromgoogle = findViewById(R.id.namefromgoogle);
         emailfromg = findViewById(R.id.email);
      //   idfromgoogle = findViewById(R.id.id);
@@ -55,6 +55,7 @@ public class login extends AppCompatActivity {
         }
 
     }
+
 
     private void signOut() {
         mGoogleSignInClient.signOut()
