@@ -29,7 +29,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 GoogleSignInClient mGoogleSignInClient;
 private static int RC_SIGN_IN = 100;
-    TextView name, email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,42 +51,14 @@ private static int RC_SIGN_IN = 100;
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
 
-//        signInButton.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v)  {
-//
-//                Toast.makeText(getBaseContext(), "Click the sign in button again to sign in!" , Toast.LENGTH_SHORT ).show();
-//
-//                Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-//                startActivityForResult(signInIntent, RC_SIGN_IN);
-//
-//                Intent launchActivity1= new Intent(MainActivity.this, login.class);
-//                startActivity(launchActivity1);
-//            }
-//        });
 
 
 
     }
 
-//    private void signIn() {
-//        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-//        startActivityForResult(signInIntent, RC_SIGN_IN);
-//
-//
-//        Intent launchActivity1= new Intent(MainActivity.this, login.class);
-//        startActivity(launchActivity1);
-//    }
-
     private void signIn() {
 
 
-//        mGoogleSignInClient.signOut()
-//                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<Void> task) {
-//                        Toast.makeText(MainActivity.this, "Click the sign in button again to sign in! ", Toast.LENGTH_SHORT).show();
-//                    }
-//                });
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
 
