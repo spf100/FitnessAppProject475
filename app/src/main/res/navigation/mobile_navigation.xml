@@ -12,12 +12,6 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_exercise"
-        android:name="com.example.fitnessappproject475.ui.Exercise.ExerciseFragment"
-        android:label="@string/exercise"
-        tools:layout="@layout/fragment_exercise" />
-
-    <fragment
         android:id="@+id/nav_nutrition"
         android:name="com.example.fitnessappproject475.ui.Nutrition.NutritionFragment"
         android:label="@string/nutrition"
