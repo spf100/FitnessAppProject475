@@ -17,30 +17,13 @@ import android.widget.TextView;
 import com.example.fitnessappproject475.R;
 
 
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.fitnessappproject475.R;
-
-import java.util.Objects;
 
 
 public class PedometerFragment extends Fragment implements PedometerViewModel.OnSensorChangedListener, SensorEventListener  {
@@ -56,12 +39,17 @@ public class PedometerFragment extends Fragment implements PedometerViewModel.On
 
 
         View root = inflater.inflate(R.layout.pedometer_fragment, container, false);
-        final TextView textView = root.findViewById(R.id.displaySteps);
-        pedometerViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView stepTextView = root.findViewById(R.id.displaySteps);
+        final TextView calorieTextView = root.findViewById(R.id.displayCals);
+        pedometerViewModel.getStepText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+                stepTextView.setText(s);
             }
+        });
+        pedometerViewModel.getCalorieText().observe(getViewLifecycleOwner(), new Observer<String>() {
+            @Override
+            public void onChanged(String s) { calorieTextView.setText(s); }
         });
         return root;
     }
@@ -100,8 +88,10 @@ public class PedometerFragment extends Fragment implements PedometerViewModel.On
     @Override
     public void onSensorChanged(SensorEvent event) {
         if (pedometerViewModel.activityRunning) {
-            pedometerViewModel.updateMtext(String.valueOf(event.values[0]));
-
+            String steps = String.valueOf(event.values[0]);
+            double calories = event.values[0] * 0.04513;
+            pedometerViewModel.updateStepText(steps);
+            pedometerViewModel.updateCalorieText(String.format("%.2f", calories));
         }
     }
 

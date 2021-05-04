@@ -4,35 +4,38 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import android.content.Context;
-import android.hardware.Sensor;
 import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
-
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
 
 public class PedometerViewModel extends ViewModel {
     boolean activityRunning;
-    private MutableLiveData<String> mText = new MutableLiveData<>();
+    private MutableLiveData<String> stepText = new MutableLiveData<>();
+    private MutableLiveData<String> calorieText = new MutableLiveData<>();
     public String steps;
+    public String calories;
 
     public interface OnSensorChangedListener {
         void onSensorChange(SensorEvent event);
     }
 
-    public void updateMtext(String steps) {
-        mText.setValue(steps);
+    public void updateStepText(String steps) {
+        stepText.setValue(steps);
+    }
+
+    public void updateCalorieText(String cals) {
+        calorieText.setValue(cals);
     }
 
     public PedometerViewModel() {
-        mText.setValue(steps);
+        stepText.setValue(steps);
+        calorieText.setValue(calories);
     }
 
-    public LiveData<String> getText() {
-        return mText;
+    public LiveData<String> getStepText() {
+        return stepText;
+    }
+
+    public LiveData<String> getCalorieText() {
+        return calorieText;
     }
 
 

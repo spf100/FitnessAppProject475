@@ -39,4 +39,6 @@
     <string name="exercise">Exercise</string>
     <string name="profile">Profile</string>
     <string name="string_0">0</string>
+    <string name="steps_today">Steps Today</string>
+    <string name="calories_burnt">Calories Burnt</string>
 </resources>
