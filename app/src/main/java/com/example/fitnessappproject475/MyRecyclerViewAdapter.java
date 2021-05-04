@@ -50,5 +50,5 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
             return localDataSet.length;
         }
 
-        //TODO: add this "recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));" to ensure the kcal turns into a row new to food
+
     }
