@@ -43,9 +43,6 @@ private static int RC_SIGN_IN = 100;
                 Toast.makeText(getBaseContext(), "Click the sign in button again to sign in!" , Toast.LENGTH_SHORT ).show();
                 signIn();
 
-
-
-
             }
 
         });
