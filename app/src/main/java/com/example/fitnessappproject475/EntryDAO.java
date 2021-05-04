@@ -2,6 +2,7 @@ package com.example.fitnessappproject475;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.OnConflictStrategy;
@@ -19,5 +20,8 @@ public interface EntryDAO {
 
     @Query("SELECT * FROM entries")
     LiveData<List<Entry>> getEntries();
+
+    @Delete
+    void delete(Entry entry);
 }
 
