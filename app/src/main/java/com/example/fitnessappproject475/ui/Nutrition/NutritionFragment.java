@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fitnessappproject475.Entry;
 import com.example.fitnessappproject475.EntryViewModel;
-import com.example.fitnessappproject475.NoteAdapter;
+import com.example.fitnessappproject475.EntryAdapter;
 import com.example.fitnessappproject475.R;
 
 import java.util.List;
@@ -34,14 +34,14 @@ public class NutritionFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_nutrition, container, false);
 
         RecyclerView recyclerView = root.findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
 
-        NoteAdapter adapter = new NoteAdapter();
+        EntryAdapter adapter = new EntryAdapter();
         recyclerView.setAdapter(adapter);
 
 
-        final TextView textView = root.findViewById(R.id.recycler_view);
+        //final TextView textView = root.findViewById(R.id.recycler_view);
         entryViewModel = ViewModelProviders.of(this).get(EntryViewModel.class);
         EntryViewModel.getAllNotes().observe(getViewLifecycleOwner(), new Observer<List<Entry>>() {
             @Override
@@ -49,12 +49,6 @@ public class NutritionFragment extends Fragment {
                 adapter.setNotes(notes);
                 //update RecyclerView
                 //Toast.makeText(NutritionFragment.this, "onChanged", Toast.LENGTH_SHORT).show();
-            }
-        });
-        nutritionViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
             }
         });
         return root;
