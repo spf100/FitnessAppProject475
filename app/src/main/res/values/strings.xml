@@ -41,4 +41,6 @@
     <string name="string_0">0</string>
     <string name="steps_today">Steps Today</string>
     <string name="calories_burnt">Calories Burnt</string>
+    <string name="total_daily_calories">Total Daily Calories</string>
+    <string name="_0">0</string>
 </resources>

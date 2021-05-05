@@ -30,8 +30,8 @@ public class AddEntryActivity extends AppCompatActivity {
         editTextName = findViewById(R.id.edit_text_id);
         editTextName = findViewById(R.id.edit_text_name);
         numberPickerGram = findViewById(R.id.number_picker_gram);
-        numberPickerGram.setMinValue(1);
-        numberPickerGram.setMaxValue(10);
+        numberPickerGram.setMinValue(10);
+        numberPickerGram.setMaxValue(500);
 
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
         setTitle("Add Entry");

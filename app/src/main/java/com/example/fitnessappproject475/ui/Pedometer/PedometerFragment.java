@@ -3,6 +3,7 @@ package com.example.fitnessappproject475.ui.Pedometer;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -92,6 +93,7 @@ public class PedometerFragment extends Fragment implements PedometerViewModel.On
             double calories = event.values[0] * 0.04513;
             pedometerViewModel.updateStepText(steps);
             pedometerViewModel.updateCalorieText(String.format("%.2f", calories));
+
 
             if(event.values[0] % 2000 == 0) { //2000 steps in a mile per average
                 Toast.makeText(getActivity(), "You have walked " + (event.values[0] / 2000) + " miles!", Toast.LENGTH_LONG).show();
