@@ -10,22 +10,22 @@ public class Entry {
     private int id;
     private String name;
     private int kilocal;
-    private double grams;
+    private int grams;
 
     public String getName() { return name; }
     public void setName(String name){ this.name = name;}
     public int getKilocal(){return kilocal;}
     public void setKilocal(int kilocal){this.kilocal = kilocal;}
-    public double getGrams(){return grams;}
-    public void setGrams(double grams){this.grams = grams;}
+    public int getGrams(){return grams;}
+    public void setGrams(int grams){this.grams = grams;}
     public int getId() { return id; }
     public void setId(int id) {this.id = id;  }
 
 
 
-    public Entry(String name, int kilocal, double grams) {
+    public Entry(String name,  int grams) { //int kilocal,
         this.name = name;
-        this.kilocal = kilocal;
+        //this.kilocal = kilocal;
         this.grams = grams;
     }
 

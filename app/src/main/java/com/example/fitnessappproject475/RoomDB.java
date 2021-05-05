@@ -47,9 +47,9 @@ public abstract class RoomDB extends RoomDatabase {
         }
         @Override
         protected Void doInBackground(Void... voids) {
-            entryDao.insert(new Entry("Food 1", 100, 1));
-            entryDao.insert(new Entry("Food 2", 200, 2));
-            entryDao.insert(new Entry("Food 3", 300, 3));
+            entryDao.insert(new Entry("Food 1", 100)); //1
+            entryDao.insert(new Entry("Food 2", 200)); //2
+            entryDao.insert(new Entry("Food 3", 300)); //3
             return null;
         }
     }
