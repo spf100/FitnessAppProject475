@@ -75,14 +75,14 @@ public class PedometerFragment extends Fragment implements PedometerViewModel.On
         if(countSensor!= null){
             sensorManager.registerListener(this, countSensor, SensorManager.SENSOR_DELAY_UI);
         } else {
-            Toast.makeText(getActivity(), "Count sensor not available!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "Step Counter is not Available!", Toast.LENGTH_SHORT).show();
         }
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        pedometerViewModel.activityRunning = false;
+        pedometerViewModel.activityRunning = true;
     }
 
     @Override
@@ -92,6 +92,10 @@ public class PedometerFragment extends Fragment implements PedometerViewModel.On
             double calories = event.values[0] * 0.04513;
             pedometerViewModel.updateStepText(steps);
             pedometerViewModel.updateCalorieText(String.format("%.2f", calories));
+
+            if(event.values[0] % 2000 == 0) { //2000 steps in a mile per average
+                Toast.makeText(getActivity(), "You have walked " + (event.values[0] / 2000) + " miles!", Toast.LENGTH_LONG).show();
+            }
         }
     }
 

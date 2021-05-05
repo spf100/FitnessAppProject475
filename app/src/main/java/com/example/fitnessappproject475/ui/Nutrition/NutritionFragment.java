@@ -12,15 +12,18 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fitnessappproject475.Entry;
 import com.example.fitnessappproject475.EntryViewModel;
+import com.example.fitnessappproject475.NoteAdapter;
 import com.example.fitnessappproject475.R;
 
 import java.util.List;
 
 public class NutritionFragment extends Fragment {
-    private EntryViewModel noteViewModel;
+    private EntryViewModel entryViewModel;
 
     private NutritionViewModel nutritionViewModel;
 
@@ -29,11 +32,21 @@ public class NutritionFragment extends Fragment {
         nutritionViewModel =
                 new ViewModelProvider(this).get(NutritionViewModel.class);
         View root = inflater.inflate(R.layout.fragment_nutrition, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        noteViewModel = ViewModelProviders.of(this).get(EntryViewModel.class);
+
+        RecyclerView recyclerView = root.findViewById(R.id.recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setHasFixedSize(true);
+
+        NoteAdapter adapter = new NoteAdapter();
+        recyclerView.setAdapter(adapter);
+
+
+        final TextView textView = root.findViewById(R.id.recycler_view);
+        entryViewModel = ViewModelProviders.of(this).get(EntryViewModel.class);
         EntryViewModel.getAllNotes().observe(getViewLifecycleOwner(), new Observer<List<Entry>>() {
             @Override
             public void onChanged(@Nullable List<Entry> notes) {
+                adapter.setNotes(notes);
                 //update RecyclerView
                 //Toast.makeText(NutritionFragment.this, "onChanged", Toast.LENGTH_SHORT).show();
             }

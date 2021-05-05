@@ -21,6 +21,8 @@ public class Entry {
     public int getId() { return id; }
     public void setId(int id) {this.id = id;  }
 
+
+
     public Entry(String name, int kilocal, double grams) {
         this.name = name;
         this.kilocal = kilocal;
